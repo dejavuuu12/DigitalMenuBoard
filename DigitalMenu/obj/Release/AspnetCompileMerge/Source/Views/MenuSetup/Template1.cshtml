@@ -1,0 +1,59 @@
+﻿@model IEnumerable<DigitalMenu.Models.Item>
+
+
+@{
+    Layout = "";
+}
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous">
+<style type="text/css">
+    .card-img-top {
+        height: 15rem;
+        object-fit: cover;
+    }
+</style>
+
+
+<div class="container-fluid">
+    <!-- <h1>Menu</h1> -->
+    <div class="jumbotron text-left shadow-lg  p-1 mb-0 rounded ">
+        <h1>@ViewBag.Title</h1>
+
+    </div>
+    @{
+        int i = 0;
+
+    <div class="card-deck">
+        <div class="w-100 p-0"></div>
+        @foreach (var item in Model)
+        {
+
+            i++;
+
+            <div class="card shadow-sm m-1">
+                <img class="card-img-top" src="/Items/RetrieveImage/@item.ID" alt="Card image cap">
+                <div class="card-img-overlay">
+
+                    <span class="btn btn-outline-light font-weight-bold float-right  bg-primary text-white">@item.Rank</span>
+                </div>
+                <div class="card-body p-1 mb-0 alert alert-danger">
+                    <span class="float-left">
+                        <span class="align-text-bottom font-weight-bold mb-1 float-left">@item.ItemName</span>
+                        <span class="w-100 clearfix"></span>
+                        <span class="align-text-bottom clearfix font-italic float-left">@item.Description</span>
+                    </span>
+                    <h1>
+                        <span class="align-text-bottom badge badge-success  display-3 float-right">@item.Price1</span>
+                    </h1>
+                </div>
+            </div>
+            if (i % @ViewBag.NoOfItemInRow == 0) {
+    <div class="w-100 p-0"></div>
+            }
+        }
+
+    </div>
+    }
+</div>
