@@ -233,7 +233,6 @@ D:\DigitalMenuBoard\DigitalMenu\bin\Microsoft.Owin.Security.Google.xml
 D:\DigitalMenuBoard\DigitalMenu\bin\Microsoft.Owin.Security.Twitter.xml
 D:\DigitalMenuBoard\DigitalMenu\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\DigitalMenuBoard\DigitalMenu\bin\Microsoft.Owin.Security.OAuth.xml
-D:\DigitalMenuBoard\DigitalMenu\obj\Release\DigitalMenu.csprojAssemblyReference.cache
 D:\DigitalMenuBoard\DigitalMenu\obj\Release\DigitalMenu.csproj.CoreCompileInputs.cache
 D:\DigitalMenuBoard\DigitalMenu\obj\Release\DigitalMenu.csproj.CopyComplete
 D:\DigitalMenuBoard\DigitalMenu\obj\Release\DigitalMenu.dll
